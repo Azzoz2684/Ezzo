@@ -28,10 +28,10 @@ document.getElementById('quick-access-btn').onclick = function() {
 };*/
 
 // وظيفة لتفعيل الوضع الليلي
-function toggleNightMode() {
+/*function toggleNightMode() {
     var body = document.body;
     body.classList.toggle('night-mode');
-}
+}*/
 
 // إضافة وظيفة زر للتعليقات
 /*function addComment() {

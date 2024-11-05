@@ -15,3 +15,37 @@ function scrollToMenu(menuNumber) {
         element.scrollIntoView({ behavior: 'smooth' });
     }
 }
+
+// Toggle the visibility of the quick access menu
+document.getElementById('quick-access-btn').onclick = function() {
+    var menu = document.getElementById('quick-access-menu');
+    menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+};
+
+// إضافة رسالة ترحيبية عند الدخول للصفحة
+/*window.onload = function() {
+    alert('مرحبا بك في موقع تحميل المحاضرات');
+};*/
+
+// وظيفة لتفعيل الوضع الليلي
+function toggleNightMode() {
+    var body = document.body;
+    body.classList.toggle('night-mode');
+}
+
+// إضافة وظيفة زر للتعليقات
+/*function addComment() {
+    var commentInput = document.getElementById('commentInput');
+    var commentList = document.getElementById('commentList');
+    if (commentInput.value.trim() !== "") {
+        var commentItem = document.createElement('div');
+        commentItem.textContent = commentInput.value;
+        commentList.appendChild(commentItem);
+        commentInput.value = ""; // تفريغ الحقل بعد إضافة التعليق
+    }
+}*/
+
+// وظيفة إرسال بريد إلكتروني
+function sendEmail() {
+    window.location.href = 'mailto:rdoan2684@gmail.com';
+}
